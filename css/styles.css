@@ -409,7 +409,7 @@ img {
   justify-content: center;
 }
 
-.socialnetworks__link::before {
+.socialnetworks__link {
   /* временный фон */
   background-color: var(--activestate);
   /* временный фон */
@@ -422,28 +422,24 @@ img {
   background-repeat: no-repeat;
 }
 
-.socialnetworks__item:not(:last-child) {
-  margin-right: 10px;
-}
-
-.socialnetworks__instagram::before {
+.socialnetworks__instagram {
   background-image: url("../images/socialnetworks/instagram.svg");
 }
 
-.socialnetworks__twitter::before {
+.socialnetworks__twitter {
   background-image: url("../images/socialnetworks/twitter.svg");
 }
 
-.socialnetworks__facebook::before {
+.socialnetworks__facebook {
   background-image: url("../images/socialnetworks/facebook.svg");
 }
 
-.socialnetworks__linkedin::before {
+.socialnetworks__linkedin {
   background-image: url("../images/socialnetworks/linkedin.svg");
 }
 
-.socialnetworks__link {
-  color: inherit;
+.socialnetworks__item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .socialnetworks__link:hover,
