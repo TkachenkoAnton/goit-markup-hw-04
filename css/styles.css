@@ -472,8 +472,39 @@ img {
   display: flex;
 }
 
-.partners__item {
+.partners__link {
+  content: "";
+  display: block;
   width: 170px;
+  height: 90px;
+  border: 1px solid var(--primary-font-color);
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.partners__yaco {
+  background-image: url("../images/partners/ya&co.svg");
+}
+
+.partners__companytaglinehere {
+  background-image: url("../images/partners/companytaglinehere.svg");
+}
+
+.partners__company {
+  background-image: url("../images/partners/company.svg");
+}
+
+.partners__fosterpeters {
+  background-image: url("../images/partners/fosterpeters.svg");
+}
+
+.partners__brand {
+  background-image: url("../images/partners/brand.svg");
+}
+
+.partners__companytagline {
+  background-image: url("../images/partners/companytagline.svg");
 }
 
 .partners__item:not(:last-child) {
