@@ -253,27 +253,32 @@ p {
 }
 
 /* Особености */
+
+.features__headline {
+  display: none;
+}
+
 .features {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.features-list {
+.features__list {
   display: flex;
 }
-.features-list-item {
+.features__item {
   width: 270px;
 }
 
-.features-list-item:not(:last-child) {
+.features__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.features-list-item .photo {
+.features__photo {
   margin-bottom: 30px;
 }
 
-.features-list-item .title {
+.features__title {
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -282,7 +287,7 @@ p {
   color: var(--primary-headline);
 }
 
-.features-list-item .description {
+.features__description {
   font-size: 14px;
   line-height: 1.71;
 }
