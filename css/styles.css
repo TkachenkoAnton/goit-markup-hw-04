@@ -459,7 +459,7 @@ img {
   padding-bottom: 94px;
 }
 
-.partners-title {
+.partners__maintitle {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -468,15 +468,15 @@ img {
   color: var(--primary-headline);
 }
 
-.partners-list {
+.partners__list {
   display: flex;
 }
 
-.partners-list-item {
+.partners__item {
   width: 170px;
 }
 
-.partners-list-item:not(:last-child) {
+.partners__item:not(:last-child) {
   margin-right: 30px;
 }
 
