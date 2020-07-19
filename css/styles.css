@@ -114,6 +114,11 @@ p {
   display: flex;
 }
 
+.contacts__link {
+  display: flex;
+  align-items: center;
+}
+
 .navigation__link,
 .contacts__link {
   font-weight: 500;
@@ -135,6 +140,21 @@ p {
 
 .contacts__item:not(:last-child) {
   margin-right: 30px;
+}
+
+.contacts__link::before {
+  background-color: red;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  content: "";
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.envelope::before {
+  background-image: url("../images/topline/envelope.svg");
 }
 
 .contacts__link {
