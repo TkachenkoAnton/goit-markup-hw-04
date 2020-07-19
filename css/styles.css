@@ -89,7 +89,7 @@ p {
   text-decoration: none;
 }
 
-.photo {
+img {
   display: block;
 }
 
@@ -322,7 +322,7 @@ p {
   padding-bottom: 94px;
 }
 
-.whatarewedoing-title {
+.whatarewedoing__maintitle {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -331,15 +331,15 @@ p {
   color: var(--primary-headline);
 }
 
-.whatarewedoing-list {
+.whatarewedoing__list {
   display: flex;
 }
 
-.whatarewedoing-list-item:not(:last-child) {
+.whatarewedoing__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.whatarewedoing-list-item .title {
+.whatarewedoing__title {
   /* Временный фон */
   background-color: plum;
   /* Временный фон */
