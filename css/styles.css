@@ -509,14 +509,12 @@ img {
 
 /* Подвал */
 .footer {
-  /* Временный фон */
   background-color: #2f303a;
-  /* Временный фон */
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-.footer-nav {
+.footernav {
   display: flex;
   align-items: baseline;
 }
@@ -534,19 +532,19 @@ img {
   color: var(--logo-bottom-color);
 }
 
-.address-item-street,
-.address-item-contacts {
+.footernav__street,
+.footernav__contacts {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   color: var(--footerheadelements);
 }
 
-.address-item-contacts {
+.footernav__contacts {
   color: var(--footerelements);
 }
 
-.joinin {
+.socialcommunity_jointitle {
   display: block;
   margin-bottom: 20px;
   font-weight: 700;
@@ -556,21 +554,46 @@ img {
   color: var(--footerheadelements);
 }
 
-.joinin-list {
+.socialcommunity__list {
   display: flex;
 }
 
-.joinin-list-item:not(:last-child) {
+.socialcommunity__link {
+}
+
+.socialcommunity__link {
+  content: "";
+  display: block;
+  width: 44px;
+  height: 44px;
+  background: var(--joinin-links-background);
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.socialcommunity__instagram {
+  background-image: url("../images/socialcommunity/whiteinstagram.svg");
+}
+
+.socialcommunity__twitter {
+  background-image: url("../images/socialcommunity/whitrtwitter.svg");
+}
+
+.socialcommunity__facebook {
+  background-image: url("../images/socialcommunity/whitefacebook.svg");
+}
+
+.socialcommunity__linkedin {
+  background-image: url("../images/socialcommunity/whitelinkedin.svg");
+}
+
+.socialcommunity__item:not(:last-child) {
   margin-right: 10px;
 }
 
-.joinin-links {
-  background: var(--joinin-links-background);
-  color: var(--primary-background-color);
-}
-
-.joinin-links:hover,
-.joinin-links:focus {
+.socialcommunity__link:hover,
+.socialcommunity__link:focus {
   background-color: var(--activestate);
 }
 
