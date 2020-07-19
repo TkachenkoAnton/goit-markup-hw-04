@@ -143,6 +143,7 @@ p {
 }
 
 .contacts__link::before {
+  content: "";
   width: 16px;
   height: 16px;
   margin-right: 10px;
@@ -270,12 +271,36 @@ p {
   width: 270px;
 }
 
-.features__item:not(:last-child) {
-  margin-right: 30px;
+.features__item::before {
+  content: "";
+  display: block;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.features__photo {
-  margin-bottom: 30px;
+.features__antenna::before {
+  background-image: url("../images/features/antenna1.svg");
+}
+
+.features__clock::before {
+  background-image: url("../images/features/clock1.svg");
+}
+
+.features__diagram::before {
+  background-image: url("../images/features/diagram1.svg");
+}
+
+.features__astronaut::before {
+  background-image: url("../images/features/astronaut1.svg");
+}
+
+.features__item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .features__title {
