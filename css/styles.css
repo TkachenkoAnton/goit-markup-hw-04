@@ -413,32 +413,19 @@ img {
 }
 
 .socialnetworks__link {
-  /* временный фон */
-  background-color: var(--activestate);
-  /* временный фон */
-  content: "";
-  display: block;
+  display: flex;
   width: 44px;
   height: 44px;
+  background: var(--joinin-links-background);
   border-radius: 50%;
-  background-position: center;
   background-repeat: no-repeat;
 }
 
-.socialnetworks__instagram {
-  background-image: url("../images/socialnetworks/instagram.svg");
-}
-
-.socialnetworks__twitter {
-  background-image: url("../images/socialnetworks/twitter.svg");
-}
-
-.socialnetworks__facebook {
-  background-image: url("../images/socialnetworks/facebook.svg");
-}
-
-.socialnetworks__linkedin {
-  background-image: url("../images/socialnetworks/linkedin.svg");
+.socialnetworks__icon {
+  width: 20px;
+  height: 20px;
+  margin: auto;
+  fill: #afb1b8;
 }
 
 .socialnetworks__item:not(:last-child) {
@@ -448,7 +435,11 @@ img {
 .socialnetworks__link:hover,
 .socialnetworks__link:focus {
   background-color: var(--activestate);
-  color: var(--primary-background-color);
+}
+
+.socialnetworks__link:hover .socialnetworks__icon,
+.socialnetworks__link:focus .socialnetworks__icon {
+  fill: var(--primary-background-color);
 }
 
 /* Постоянные клиенты */
@@ -574,10 +565,7 @@ img {
   background-repeat: no-repeat;
 }
 
-.socialcommunity__icon-instagram,
-.socialcommunity__icon-twitter,
-.socialcommunity__icon-facebook,
-.socialcommunity__icon-linkedin {
+.socialcommunity__icon {
   width: 20px;
   height: 20px;
   margin: auto;
