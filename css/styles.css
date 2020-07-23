@@ -134,6 +134,10 @@ img {
   padding-bottom: 32px;
 }
 
+.current {
+  color: var(--activestate);
+}
+
 .navigation__item:not(:last-child) {
   margin-right: 50px;
 }
@@ -142,7 +146,7 @@ img {
   margin-right: 30px;
 }
 
-.contacts__link::before {
+/* .contacts__link::before {
   content: "";
   width: 16px;
   height: 16px;
@@ -150,29 +154,36 @@ img {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+} */
+
+.contacts__envelope {
+  width: 16px;
+  height: 11px;
+  margin-right: 10px;
+  fill: var(--primary-font-color);
 }
 
-.contacts__envelope::before {
-  background-image: url("../images/topline/envelope.svg");
-}
-
-.contacts__smartphone::before {
-  background-image: url("../images/topline/smartphone.svg");
+.contacts__smartphone {
+  width: 10px;
+  height: 15px;
+  margin-right: 10px;
+  fill: var(--primary-font-color);
 }
 
 .contacts__link {
   color: var(--primary-font-color);
 }
 
-.current {
-  color: var(--activestate);
-}
-
 .navigation__link:hover,
 .navigation__link:focus,
 .contacts__link:hover,
-.contacts__link:focus {
+.contacts__link:focus,
+.contacts__link:hover .contacts__envelope,
+.contacts__link:focus .contacts__envelope,
+.contacts__link:hover .contacts__smartphone,
+.contacts__link:focus .contacts__smartphone {
   color: var(--activestate);
+  fill: var(--activestate);
 }
 
 /* Logo */
