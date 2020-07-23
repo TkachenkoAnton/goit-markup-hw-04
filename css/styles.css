@@ -418,7 +418,6 @@ img {
   height: 44px;
   background: var(--joinin-links-background);
   border-radius: 50%;
-  background-repeat: no-repeat;
 }
 
 .socialnetworks__icon {
@@ -463,42 +462,28 @@ img {
 }
 
 .partners__link {
-  content: "";
-  display: block;
+  display: flex;
   width: 170px;
   height: 90px;
   border: 1px solid var(--primary-font-color);
   border-radius: 4px;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.partners__yaco {
-  background-image: url("../images/partners/ya&co.svg");
-}
-
-.partners__companytaglinehere {
-  background-image: url("../images/partners/companytaglinehere.svg");
-}
-
-.partners__company {
-  background-image: url("../images/partners/company.svg");
-}
-
-.partners__fosterpeters {
-  background-image: url("../images/partners/fosterpeters.svg");
-}
-
-.partners__brand {
-  background-image: url("../images/partners/brand.svg");
-}
-
-.partners__companytagline {
-  background-image: url("../images/partners/companytagline.svg");
 }
 
 .partners__item:not(:last-child) {
   margin-right: 30px;
+}
+
+.partners__icon {
+  margin: auto;
+  fill: #afb1b8;
+}
+
+.partners__link:hover,
+.partners__link:focus,
+.partners__link:hover .partners__icon,
+.partners__link:focus .partners__icon {
+  border-color: var(--activestate);
+  fill: var(--activestate);
 }
 
 /* Подвал */
@@ -561,8 +546,6 @@ img {
   height: 44px;
   background: var(--joinin-links-background);
   border-radius: 50%;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .socialcommunity__icon {
